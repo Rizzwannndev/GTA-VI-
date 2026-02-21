@@ -1,5 +1,5 @@
 # GTA VI - Interactive Landing Page
-![GTA VI Landing Page](public/snapshot.png)
+![GTA VI Landing Page](public/snapshot.PNG)
 A stunning interactive landing page for Grand Theft Auto VI built with React, Vite, and GSAP animations. This project showcases modern web development techniques with cutting-edge animation libraries and responsive design principles.
 
 ## Features
