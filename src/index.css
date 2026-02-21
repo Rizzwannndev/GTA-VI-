@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@font-face {
+  font-family: "priceDown";
+  src: url(./pricedown.otf);
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+  font-family: "priceDown";
+  background-color: #000;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to bottom,
+    #a855f7,
+    #ec4899,
+    #3b82f6,
+    #ffffff
+  );
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    to bottom,
+    #c084fc,
+    #f472b6,
+    #60a5fa,
+    #ffffff
+  );
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ec4899 transparent;
+}
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  pointer-events: none; /* optional */
+}
