@@ -76,7 +76,7 @@ function App() {
   main?.addEventListener("mousemove", function (e) {
     const xMove = (e.clientX / window.innerWidth - 0.5) * 40;
     gsap.to(".main .gta6", {
-      x: -40 + xMove * 0.1 * (window.innerWidth / 100),
+      x: -40 + xMove * 0.2 * (window.innerWidth / 100),
     });
     gsap.to(".bg", {
       x: xMove * 1.7,
@@ -153,7 +153,7 @@ function App() {
           </div>
         </div>
         <div className="w-full h-screen flex items-center justify-center bg-black overflow-hidden">
-            <div className="container flex text-white w-full h-[80%] gap-11">
+            <div className="container flex text-white w-full h-[80%] gap-7">
               <div className="limg relative w-1/2 h-full">
                 <img
                   className="absolute scale-[1.1] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
@@ -161,20 +161,33 @@ function App() {
                   alt=""
                 />
               </div>
-            <div className="right-sec text-white w-[40%]">
+            <div className="right-sec text-white w-[43%]">
               <h1 className='text-7xl mt-[60px]'>Still Running,</h1>
               <h1 className='text-7xl'>Not Hunting</h1>
+              <div className="steam flex flex-row items-center justify center">
+                <h1 className='text-4xl mt-[30px] text-[#66c0f4]'>Powered By Steam</h1>
+                 <img src="./steam2.png" className='h-[50px] mt-6 ml-6' />
+              </div>
               <p className="mt-9 text-[15px] font-[Poppins]">
-                  Grand Theft Auto VI takes players back to the neon-soaked streets of Vice City, delivering Rockstar’s most immersive open-world experience yet. From sprawling beaches and high-rise skylines to gritty back alleys and chaotic highways, every corner of Leonida feels alive with opportunity and danger.
+                  Grand Theft Auto VI takes players back to the neon-soaked streets of Vice City, delivering Rockstar’s most immersive open-world experience yet.
                 </p>
                 <p className="mt-2 text-[15px] font-[Poppins]">
-                  Step into a gripping crime story filled with high-stakes heists, fast cars, underground deals, and unpredictable encounters. With cutting-edge visuals, dynamic weather systems, and a living, breathing world reacting to your every move, GTA 6 pushes the boundaries of what an open-world game can be.
+                  Step into a gripping crime story filled with fast cars, underground deals, and unpredictable encounters.
                 </p>
-                <button className="btn bg-yellow-500 px-16 py-5 text-black mt-10 text-2xl">
+                <p className="mt-2 text-[15px] font-[Poppins]">
+                  Dive into a pulse-pounding crime saga packed with daring heists, roaring engines, shadowy alliances, and twists that strike when you least expect them.
+                </p>
+                <div className="btns flex gap-5">
+                <button className="btn bg-yellow-500 px-10 py-5 text-black mt-10 text-2xl">
                   Download Now
                 </button>
+                <button className="btn-steam bg-[#66c0f4] px-16 py-5 text-black mt-10 text-2xl">
+                  Get on Steam
+                </button>
+                </div>
             </div>
           </div>
+          <p className="license absolute bottom-6 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white font-[Poppins] text-[18px]">&copy; <span  className='font-[priceDown]'> 2026 License | Rockstar Games | Made By <a target='_blank' href="www.linkedin.com/in/rizwan-waseem">Rizwan Waseem</a></span></p>
         </div>
       </div>}
     </>

@@ -51,12 +51,12 @@ img {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  pointer-events: none; /* optional */
+  pointer-events: none;
 }
 .btn{
     color: #000;
     border: 2px solid #f0b100;
-    padding: 12px 70px;
+    padding: 12px 45px;
     border-radius: 6px;
     position: relative;
     z-index: 1;
@@ -77,4 +77,33 @@ img {
 }
 .btn:hover{
     color: #f0b100;
+}
+.btn-steam{
+    color: #000;
+    border: 2px solid #66c0f4;
+    padding: 12px 45px;
+    border-radius: 6px;
+    position: relative;
+    z-index: 1;
+}
+.btn-steam::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    height: 100%;
+    width: 0%;
+    z-index: -1;
+    transition: .3s ;
+}
+.btn-steam:hover::before{
+    width: 100%;
+}
+.btn-steam:hover{
+    color: #66c0f4;
+}
+.license span a:hover{
+  color: #f0b100;
+  transition: 0.3s;
 }
